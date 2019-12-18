@@ -5,9 +5,9 @@ module.exports = {
     md.options.linkify = true
   },
   port: '8080',
-  /* head: [
+  head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/img/favicon.ico' }]
-  ], */
+  ],
   themeConfig: {
     nav: [
       { text: "Top", link: '/' },
@@ -19,4 +19,9 @@ module.exports = {
       }
     ],
   },
+  markdown: {
+    extendMarkdown: md => {
+      md.use(require('markdown-it-task-lists'))
+    }
+  }
 }

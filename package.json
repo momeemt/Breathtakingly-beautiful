@@ -1,10 +1,5 @@
 {
-  "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
-  },
   "devDependencies": {
-    "markdown-it-footnote": "^3.0.2",
-    "vuepress": "^1.0.0-alpha.46"
+    "markdown-it-task-lists": "^2.1.1"
   }
 }
